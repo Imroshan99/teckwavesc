@@ -25,7 +25,7 @@ const Dropdown = ({ options, selectedOption, onChange }) => {
 };
 
 const Label = ({ label }) => {
-  return <div style={{ marginLeft: "80px" }}>{label}</div>;
+  return <div style={{ marginLeft: "450px" }}>{label}</div>;
 };
 
 const App = () => {
@@ -73,7 +73,12 @@ const App = () => {
           onChange={(e) => setField4(e.target.value)}
         />
         <button onClick={resetFields}>Reset</button>
-        <input type="text" value={formula} onChange={handleFormulaChange} />
+        <input
+          type="text"
+          value={formula}
+          onChange={handleFormulaChange}
+          placeholder="Calculate here (10+10*20)"
+        />
         <button onClick={computeResult}>Calculate</button>
       </div>
       <br />
